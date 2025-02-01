@@ -9,7 +9,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from PyPDF2 import PdfReader
 from dotenv import load_dotenv
 
-# Load environment variables (e.g., OpenAI API key)
 load_dotenv()
 
 # Streamlit UI
@@ -38,7 +37,6 @@ memory = ConversationBufferWindowMemory(
     return_messages=True  # for compatibility with chat models
 )
 
-# Initialize ChromaDB for RAG (optional)
 vectorstore = None
 retriever = None
 
@@ -51,7 +49,6 @@ def initialize_rag():
     )
     retriever = vectorstore.as_retriever()
 
-# Initialize RAG (comment this out if you don't want RAG)
 initialize_rag()
 
 # Create conversation chain
