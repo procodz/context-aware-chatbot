@@ -95,7 +95,7 @@ streamlit run chat_bot.py
 
 ```
 .
-├── app.py              # Main application file
+├── chat_bot.py          # Main application file
 ├── .env                # Environment variables
 ├── requirements.txt    # Project dependencies
 ├── chroma_db/         # Vector store directory
